@@ -125,7 +125,7 @@ VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '')
 
 
 # Shortlink Info
-SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True)) # Set True Or False
+SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', False)) # Set True Or False
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'linkmonetizer.in')
 SHORTLINK_API = environ.get('SHORTLINK_API', '81ad80c93ed7f15c4e7543a8e91eacaab255c666')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/WorldZPrime/217') # How Open Shortner Link Video Link , Channel Link Where You Upload Your Video.
@@ -166,7 +166,7 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("URL", "https://industrial-elberta-davelam-4dade58d.koyeb.app/")
+URL = environ.get("URL", "https://mass-sileas-ai4-2710ac6c.koyeb.app/")
 
 
 # Rename Info : If True Then Bot Rename File Else Not
