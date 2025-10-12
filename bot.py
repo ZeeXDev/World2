@@ -61,7 +61,7 @@ async def start():
     temp.U_NAME = me.username
     temp.B_NAME = me.first_name
     logging.info(script.LOGO)
-    tz = pytz.timezone('Asia/Kolkata')
+    tz = pytz.timezone('Africa/Lome')
     today = date.today()
     now = datetime.now(tz)
     time = now.strftime("%H:%M:%S %p")
@@ -71,7 +71,7 @@ async def start():
         print("Make Your Bot Admin In Log Channel With Full Rights")
     for ch in CHANNELS:
         try:
-            k = await TechVJBot.send_message(chat_id=ch, text="**Bot Restarted**")
+            k = await TechVJBot.send_message(chat_id=ch, text="**Bot Redemarré**")
             await k.delete()
         except:
             print("Make Your Bot Admin In File Channels With Full Rights")

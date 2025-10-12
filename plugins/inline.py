@@ -26,7 +26,7 @@ async def inline_users(query: InlineQuery):
 
 @Client.on_inline_query()
 async def answer(bot, query):
-    """Show search results for given inline query"""
+    """Afficher les résultats de recherche pour la requête inline donnée"""
     chat_id = await active_connection(str(query.from_user.id))
     
     if not await inline_users(query):
@@ -42,7 +42,7 @@ async def answer(bot, query):
         await query.answer(
             results=[],
             cache_time=0,
-            switch_pm_text='You have to subscribe my channel to use the bot',
+            switch_pm_text='Vous devez vous abonner à ma chaîne pour utiliser le bot',
             switch_pm_parameter="subscribe"
         )
         return
@@ -77,15 +77,15 @@ async def answer(bot, query):
                 title=file['file_name'],
                 document_file_id=file['file_id'],
                 caption=f_caption,
-                description=f'Size: {get_size(file["file_size"])}',
+                description=f'Taille: {get_size(file["file_size"])}',
                 reply_markup=reply_markup
             )
         )
 
     if results:
-        switch_pm_text = f"{emoji.FILE_FOLDER} Results - {total}"
+        switch_pm_text = f"{emoji.FILE_FOLDER} Résultats - {total}"
         if string:
-            switch_pm_text += f" for {string}"
+            switch_pm_text += f" pour {string}"
         try:
             await query.answer(
                 results=results,
@@ -100,9 +100,9 @@ async def answer(bot, query):
         except Exception as e:
             logging.exception(str(e))
     else:
-        switch_pm_text = f'{emoji.CROSS_MARK} No results'
+        switch_pm_text = f'{emoji.CROSS_MARK} Aucun résultat'
         if string:
-            switch_pm_text += f' for "{string}"'
+            switch_pm_text += f' pour "{string}"'
 
         await query.answer(
             results=[],
@@ -115,10 +115,6 @@ async def answer(bot, query):
 
 def get_reply_markup(query):
     buttons = [[
-        InlineKeyboardButton('Search again', switch_inline_query_current_chat=query)
+        InlineKeyboardButton('🔍 Rechercher à nouveau', switch_inline_query_current_chat=query)
     ]]
     return InlineKeyboardMarkup(buttons)
-
-
-
-

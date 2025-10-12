@@ -10,7 +10,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 @Client.on_message(filters.command(["genpassword", 'genpw']))
 async def password(bot, update):
-    message = await update.reply_text(text="`Processing...`")
+    message = await update.reply_text(text="`Traitement en cours...`")
     password = "abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+".lower()
     if len(update.command) > 1:
         qw = update.text.split(" ", 1)[1]
@@ -19,6 +19,6 @@ async def password(bot, update):
         qw = random.choice(ST)
     limit = int(qw)
     random_value = "".join(random.sample(password, limit))
-    txt = f"<b>Limit:</b> {str(limit)} \n<b>Password: <code>{random_value}</code>"
-    btn = InlineKeyboardMarkup([[InlineKeyboardButton('Update Channel', url=CHNL_LNK)]])
+    txt = f"<b>🔢 Longueur :</b> {str(limit)} \n<b>🔐 Mot de passe :</b> <code>{random_value}</code>"
+    btn = InlineKeyboardMarkup([[InlineKeyboardButton('📢 Chaîne des mises à jour', url=CHNL_LNK)]])
     await message.edit_text(text=txt, reply_markup=btn, parse_mode=enums.ParseMode.HTML)

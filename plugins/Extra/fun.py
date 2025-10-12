@@ -34,7 +34,7 @@ DART_E_MOJI = "🎯"
     filters.command(["throw", "dart"])
 )
 async def throw_dart(client, message):
-    """ /throw an @AnimatedDart """
+    """ /throw un @AnimatedDart """
     rep_mesg_id = message.message_id
     if message.reply_to_message:
         rep_mesg_id = message.reply_to_message.message_id
@@ -73,7 +73,7 @@ TRY_YOUR_LUCK = "🎰"
     filters.command(["luck", "cownd"])
 )
 async def luck_cownd(client, message):
-    """ /luck an @animatedluck """
+    """ /luck un @animatedluck """
     rep_mesg_id = message.message_id
     if message.reply_to_message:
         rep_mesg_id = message.reply_to_message.message_id
@@ -108,38 +108,38 @@ async def roll_dice(client, message):
 import random
 
 RUN_STRINGS = (
-    "A broken of a demeanly filled with darkness \
-    Why have you come to remind it ",
-    "We have become the lives to be the underwater to the underwater that we do not know.",
-    "You want the bad call ... but you need good thunder ....",
-    "Oh Bloody Grama Virtues!",
-    "Sea MUGGie I Am Going to Pay The Bill.",
-    "Want with me!",
-    "You are not a male chaff !!",
-    "I locked it, and the good beach is done by the good beach.",
+    "Un être brisé rempli de ténèbres \
+    Pourquoi es-tu venu le rappeler",
+    "Nous sommes devenus les vies pour être l'underwater à l'underwater que nous ne connaissons pas.",
+    "Tu veux le mauvais appel ... mais tu as besoin du bon tonnerre ....",
+    "Oh sanglantes vertus de Grama !",
+    "Mer MUGGie, je vais payer la facture.",
+    "Viens avec moi !",
+    "Tu n'es pas un mâle chaff !!",
+    "Je l'ai verrouillé, et la bonne plage est faite par la bonne plage.",
     "Kindi ... Kindi ...!",
-    "Giving the stems and then showing one and show the ISI Mark",
+    "Donner les tiges puis montrer une et montrer la marque ISI",
     "Dayveyeese, Kingfisher ... Childe ...!.",
-    "You have made your father for half of the midnight?",
-    "This is the King of our work.",
-    "I'm fetts to feed ...."
-    "Mumak is every Bearby Kachyo ...",
-    "Oh it moves it .... When we moves it ...",
-    "The self of carpenter is the virtue of a carpenter.",
-    "Why not to feel this intelligence in Da Vijaya ...!",
-    "Where was this time ...."
-    "Save me only ...."
-    "I know his father's name is Bhavaniami ....",
+    "As-tu fait ton père pour la moitié de minuit ?",
+    "C'est le Roi de notre travail.",
+    "Je suis fetts pour nourrir ....",
+    "Mumak est chaque Bearby Kachyo ...",
+    "Oh ça bouge .... Quand on le bouge ...",
+    "Le soi du charpentier est la vertu d'un charpentier.",
+    "Pourquoi ne pas sentir cette intelligence à Da Vijaya ...!",
+    "Où était ce temps ....",
+    "Sauve-moi seulement ....",
+    "Je sais que le nom de son père est Bhavaniami ....",
     "Da Dasa ...",
-    "Uppukam's English Salt Mongo Tree .....",
-    "Children ..",
-    "Your father to Paul ....",
-    "Car Engine Out Completely .....",
-    "This is the eye or magnety ...",
-    "Before falling in the 4th pegging, I will arrive there.",
-    "The drunk rains and wast ...."
-    "To tell me I love Yo ...."
-    "No, the Meenaka of Verbapur is not ....",
+    "L'arbre à mangues au sel anglais d'Uppukam .....",
+    "Enfants ..",
+    "Ton père à Paul ....",
+    "Moteur de voiture complètement en panne .....",
+    "C'est l'œil ou le magnety ...",
+    "Avant de tomber dans le 4ème piquetage, j'y arriverai.",
+    "Les pluies ivres et le gaspillage ....",
+    "Pour me dire je t'aime ....",
+    "Non, la Meenaka de Verbapur n'est pas ....",
 )
 
 
@@ -147,7 +147,7 @@ RUN_STRINGS = (
     filters.command("runs")
 )
 async def runs(_, message):
-    """ /runs strings """
+    """ /runs chaînes """
     effective_string = random.choice(RUN_STRINGS)
     if message.reply_to_message:
         await message.reply_to_message.reply_text(effective_string)
