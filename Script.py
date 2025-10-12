@@ -21,7 +21,7 @@ Voici quelque uns de mes fonctionnalités 👇👇.\n\nVous pouviez également m
 ‣ Développeur : <a href='t.me/WorldZPrimeBot'>propriétaire</a> 
 ‣ Bibliothèque : <a href='https://docs.pyrogram.org/'>pyrogram</a> 
 ‣ Langage : <a href='https://www.python.org/download/releases/3.0/'>python 3</a> 
-‣ Base de données : <a href='https://www.mongodb.com/'>mongo db</a> 
+‣ Base de données : <a href='https://www.firebase.com/'>Ici</a> 
 ‣ Serveur bot : <a href='https://heroku.com'>heroku</a></b>"""
 
     CLONE_ABOUT_TXT = """<b><blockquote>⍟───[ ᴍʏ ᴀʙᴏᴜᴛ ]───⍟</blockquote>
