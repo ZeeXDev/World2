@@ -242,9 +242,7 @@ Nom <b>: {}</b>
 
 Message <b>: {}</b>"""
 
-    CAPTION = """<b>📂 Nom du fichier : {file_name}
-
-<b>⚙️ Taille : {file_size}</b>""" 
+    CAPTION = """<b>📂 Nom du fichier : {file_name} Par [<a href='t.me/WorldZPrime'>WorldZPrime</a></b>""" 
 
     IMDB_TEMPLATE_TXT = """
 <b>Requête : {qurey}
@@ -255,10 +253,7 @@ Données IMDb :
 🎭 Genres : {genres}
 📆 Année : <a href={url}/releaseinfo>{year}</a>
 🌟 Note : <a href={url}/ratings>{rating}</a> / 10 (basé sur {votes} avis d'utilisateurs.)
-☀️ Langues : <code>{languages}</code>
-📀 Durée : {runtime} Minutes
-📆 Info sortie : {release_date}
-🎛 Pays : <code>{countries}</code>
+☀️ Langues : <code>Français</code>
 
 
 ⏰ Résultat affiché en : {remaining_seconds} <i>secondes</i> 🔥

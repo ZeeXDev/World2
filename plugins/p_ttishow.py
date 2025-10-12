@@ -249,7 +249,7 @@ async def unban_a_user(bot, message):
     try:
         k = await bot.get_users(chat)
     except PeerIdInvalid:
-        return await message.reply("Ceci est un utilisateur invalide, assurez-vous que je l'ai rencontré auparavant.")
+        return await message.reply("Ceci est un utilisateur invalide, assurez-vous que je l'ai rencontré auparavant..")
     except IndexError:
         return await message.reply("Ceci pourrait être un canal, assurez-vous que c'est un utilisateur.")
     except Exception as e:

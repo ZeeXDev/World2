@@ -138,7 +138,7 @@ async def next_page(bot, query):
             [
                 InlineKeyboardButton('Canal Animes', url="t.me/Godanimes"),
                 InlineKeyboardButton("Canal de Films 📺", url="t.me/ZeeXClub"),
-                InlineKeyboardButton("Notre Principal 🎬",  url="t.me/WorldZPrime")
+                InlineKeyboardButton("Chaîne Principal 🎬",  url="t.me/WorldZPrime")
             ]
         )
         btn.insert(0, [
