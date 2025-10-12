@@ -1935,7 +1935,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('📤 Partager du texte', callback_data='share')
          ], [
              InlineKeyboardButton('🎵 Musique', callback_data='song'),
-             InlineKeyboardButton('ZeeXClub' url='t.me/ZeeXClub')
+             InlineKeyboardButton('ZeeXClub', url='https://t.me/ZeeXClub')
          ], [
              InlineKeyboardButton('🖼️ ID Sticker', callback_data='sticker'),
              InlineKeyboardButton('📋 JSON', callback_data='json')
