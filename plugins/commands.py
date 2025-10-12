@@ -432,7 +432,7 @@ async def start(client, message):
     elif data.startswith("all"):
         files = temp.GETALL.get(file_id)
         if not files:
-            return await message.reply('<b><i>Aucun fichier de ce type n'existe.</b></i>')
+            return await message.reply('<b><i>Aucun fichier de ce type n\'existe.</b></i>')
         filesarr = []
         for file in files:
             file_id = file["file_id"]
