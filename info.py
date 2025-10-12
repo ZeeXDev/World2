@@ -17,12 +17,21 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "7449185632:AAESBr8H19csYV83sjVhVhRubhBjW4y
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
+<<<<<<< HEAD
 PICS = (environ.get('PICS', 'https://ibb.co/ksKPDXmc https://ibb.co/B5s1MBbx https://ibb.co/C5s6NHgs https://ibb.co/27sbRLZs https://ibb.co/GfKW0LcY https://ibb.co/2Y1Ww02C https://ibb.co/gbf48Sfk https://ibb.co/kgMC906s https://ibb.co/zhfyXmM7 https://ibb.co/whcFbj3N https://ibb.co/ksGzNppd https://ibb.co/7tn64RNp https://ibb.co/8gcfgwPr https://ibb.co/rKX8hqD6')).split()
 
 
 # Admins & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '8140299716').split()] # For Multiple Id Use One Space Between Each.
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '8467461906').split()]  # For Multiple Id Use One Space Between Each.
+=======
+PICS = (environ.get('PICS', 'https://ibb.co/ksKPDXmc https://ibb.co/B5s1MBbx https://ibb.co/C5s6NHgs https://ibb.co/27sbRLZs https://ibb.co/GfKW0LcY https://ibb.co/2Y1Ww02C https://ibb.co/gbf48Sfk https://ibb.co/kgMC906s https://ibb.co/zhfyXmM7 https://ibb.co/whcFbj3N https://ibb.co/ksGzNppd https://ibb.co/7tn64RNp https://ibb.co/8gcfgwPr https://ibb.co/rKX8hqD6 https://iili.io/FTgieQp.md.jpg https://iili.io/FTgZCc7.md.jpg https://iili.io/FTgt6hJ.md.jpg https://iili.io/FTgppcl.md.jpg https://iili.io/FTrH34j.md.jpg https://iili.io/FTr2GMF.md.jpg')).split()
+
+
+# Admins & Users
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '8467461906').split()] # For Multiple Id Use One Space Between Each.
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '8140299716').split()]  # For Multiple Id Use One Space Between Each.
+>>>>>>> ff45c72 (Salut)
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # This Channel Is For When User Start Your Bot Then Bot Send That User Name And Id In This Log Channel, Same For Group Also.
@@ -41,7 +50,11 @@ auth_channel = environ.get('AUTH_CHANNEL', '-1003062493614') # give your force s
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 
 # This Channel Is For When User Request Any File Name With command or hashtag like - /request or #request
+<<<<<<< HEAD
 reqst_channel = environ.get('REQST_CHANNEL', '-1002133724377')
+=======
+reqst_channel = environ.get('REQST_CHANNEL', '1002133724377')
+>>>>>>> ff45c72 (Salut)
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 
 # This Channel Is For Index Request 
@@ -60,7 +73,11 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://altof2:123Bonjoure@cluster0.s1suq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # IF Multiple Database Is False Then Fill Only This Database Url.
+<<<<<<< HEAD
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+=======
+DATABASE_NAME = environ.get('DATABASE_NAME', "TELEGRAMBOTS")
+>>>>>>> ff45c72 (Salut)
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'vjcollection')
 
 MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', False)) # Set True or False
@@ -89,9 +106,15 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', '') # Public Channel Us
 
 # Links
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/WorldZPrimeGrp')
+<<<<<<< HEAD
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/ZeeXDev')
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'WorldZPrimeGrp') # Support Chat Link Without https:// or @
 OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/ZeeXDevBot')
+=======
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/WorldZPrime')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'AntiFlix_d') # Support Chat Link Without https:// or @
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/WorldZPrimeBot')
+>>>>>>> ff45c72 (Salut)
 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
@@ -125,17 +148,30 @@ VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '')
 
 
 # Shortlink Info
+<<<<<<< HEAD
 SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', False)) # Set True Or False
 SHORTLINK_URL = environ.get('SHORTLINK_URL', '')
 SHORTLINK_API = environ.get('SHORTLINK_API', '')
 TUTORIAL = environ.get('TUTORIAL', '') # How Open Shortner Link Video Link , Channel Link Where You Upload Your Video.
+=======
+SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True)) # Set True Or False
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'linkmonetizer.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', '81ad80c93ed7f15c4e7543a8e91eacaab255c666')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/WorldZPrime/217') # How Open Shortner Link Video Link , Channel Link Where You Upload Your Video.
+>>>>>>> ff45c72 (Salut)
 
 
 # Others
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
+<<<<<<< HEAD
 MAX_B_TN = environ.get("MAX_B_TN", "20")
 PORT = environ.get("PORT", "8080")
 MSG_ALRT = environ.get('MSG_ALRT', 'Salut mon Cher ❤️')
+=======
+MAX_B_TN = environ.get("MAX_B_TN", "13")
+PORT = environ.get("PORT", "8080")
+MSG_ALRT = environ.get('MSG_ALRT', 'Fait avec Amour ❤️')
+>>>>>>> ff45c72 (Salut)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", f"{script.IMDB_TEMPLATE_TXT}")
