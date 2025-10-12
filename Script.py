@@ -242,14 +242,14 @@ Nom <b>: {}</b>
 
 Message <b>: {}</b>"""
 
-    CAPTION = """<b>📂 Nom du fichier : {file_name} Par [<a href='t.me/WorldZPrime'>WorldZPrime</a></b>""" 
+    CAPTION = """📂 Nom du fichier : {file_name} 
+    📦 Par <b>[<a href='t.me/WorldZPrime'>WorldZPrime</a>]</b>""" 
 
     IMDB_TEMPLATE_TXT = """
 <b>Requête : {qurey}
 
 Données IMDb :
-
-<b>🏷 Titre</b>: <a href={url}>{title}</a>
+<b><blockquote>🏷 Titre</b>: <a href={url}>{title}</a></blockquote>
 🎭 Genres : {genres}
 📆 Année : <a href={url}/releaseinfo>{year}</a>
 🌟 Note : <a href={url}/ratings>{rating}</a> / 10 (basé sur {votes} avis d'utilisateurs.)
