@@ -8,9 +8,9 @@ from pyrogram import Client, filters
 
 CMD = ["/", "."]
 
-@Client.on_message(filters.command("alive", CMD))
+@Client.on_message(filters.command("vie", CMD))
 async def check_alive(_, message):
-    await message.reply_text("**You are very lucky 🤞 I am alive ❤️ Press /start to use me**")
+    await message.reply_text("**Vᴏᴜs ᴀᴠᴇᴢ ʙᴇᴀᴜᴄᴏᴜᴘ ᴅᴇ ᴄʜᴀɴᴄᴇ 🤞 ᴊᴇ sᴜɪs ᴇɴ ᴠɪᴇ ❤️\nAᴘᴘᴜʏᴇᴢ sᴜʀ /start ᴘᴏᴜʀ ᴍ'ᴜᴛɪʟɪsᴇʀ!**")
 
 
 @Client.on_message(filters.command("ping", CMD))

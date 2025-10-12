@@ -19,8 +19,8 @@ Voici quelque uns de mes fonctionnalités 👇👇.\n\nVous pouviez également m
 ‣ Mon nom : <a href=https://t.me/{}>{}</a>
 ‣ Mon meilleur ami : <a href='tg://settings'>cette personne</a> 
 ‣ Développeur : <a href='t.me/WorldZPrimeBot'>propriétaire</a> 
-‣ Bibliothèque : <a href='https://docs.pyrogram.org/'>pyrogram</a> 
-‣ Langage : <a href='https://www.python.org/download/releases/3.0/'>python 3</a> 
+‣ Bibliothèque : <a href='https://telegram.org/'>Ici</a> 
+‣ Langage : <a href='https://Bibliotheque.com'>Ici</a> 
 ‣ Base de données : <a href='https://www.firebase.com/'>Ici</a> 
 ‣ Serveur bot : <a href='https://heroku.com'>heroku</a></b>"""
 

@@ -1828,7 +1828,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             buttons = [[
                 InlineKeyboardButton('⤬ Ajoutez-moi à votre groupe ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('💰 Gagner de l\'argent', callback_data="shortlink_info"),
+                InlineKeyboardButton('ZeeXClub', url="t.me/ZeeXClub"),
                 InlineKeyboardButton('🎬 Groupe de films', url=GRP_LNK)
             ],[
                 InlineKeyboardButton('❓ Aide', callback_data='help'),
@@ -1842,7 +1842,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             buttons = [[
                 InlineKeyboardButton('⤬ Ajoutez-moi à votre groupe ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('💰 Gagner de l\'argent', callback_data="shortlink_info"),
+                InlineKeyboardButton('ZeeXClub', url="t.me/ZeeXClub"),
                 InlineKeyboardButton('🎬 Groupe de films', url=GRP_LNK)
             ],[
                 InlineKeyboardButton('❓ Aide', callback_data='help'),
@@ -1935,7 +1935,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('📤 Partager du texte', callback_data='share')
          ], [
              InlineKeyboardButton('🎵 Musique', callback_data='song'),
-             InlineKeyboardButton('💰 Gagner de l\'argent', callback_data='shortlink_info')
+             InlineKeyboardButton('ZeeXClub' url='t.me/ZeeXClub')
          ], [
              InlineKeyboardButton('🖼️ ID Sticker', callback_data='sticker'),
              InlineKeyboardButton('📋 JSON', callback_data='json')
