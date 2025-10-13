@@ -28,7 +28,7 @@ async def start(client, message):
         pass
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-            InlineKeyboardButton('⤬ Nous Soutenir ⤬', url=f't.me/https://t.me/share/url?url=Salut%20%F0%9F%91%8B.%0A%0ARegarde%20ce%20groupe%20de%20recherche%20de%20Films/S%C3%A9ries%20automatique%20%F0%9F%91%87%F0%9F%91%87%0A%0Ahttps%3A//t.me/WorldZPrimeGrp%0A%0AC%27est%20gratuit%20aussi%20%F0%9F%A4%A9')
+            InlineKeyboardButton('⤬ Nous Soutenir ⤬', url=f'https://t.me/share/url?url=Groupe%20de%20recherche%20de%20Films/S%C3%A9ries%20en%20Fran%C3%A7ais%20%F0%9F%91%87%0A%0Ahttps%3A//t.me/WorldZPrimeGrp')
         ],[
             InlineKeyboardButton('Groupe de support', url=f'https://t.me/{SUPPORT_CHAT}'),
             InlineKeyboardButton('Groupe de films', url=GRP_LNK)
@@ -49,7 +49,7 @@ async def start(client, message):
     if len(message.command) != 2:
         if PREMIUM_AND_REFERAL_MODE == True:
             buttons = [[
-                InlineKeyboardButton('⤬ Nous Soutenir ⤬', url=f't.me/https://t.me/share/url?url=Salut%20%F0%9F%91%8B.%0A%0ARegarde%20ce%20groupe%20de%20recherche%20de%20Films/S%C3%A9ries%20automatique%20%F0%9F%91%87%F0%9F%91%87%0A%0Ahttps%3A//t.me/WorldZPrimeGrp%0A%0AC%27est%20gratuit%20aussi%20%F0%9F%A4%A9')
+                InlineKeyboardButton('⤬ Nous Soutenir ⤬', url=f'https://t.me/share/url?url=Groupe%20de%20recherche%20de%20Films/S%C3%A9ries%20en%20Fran%C3%A7ais%20%F0%9F%91%87%0A%0Ahttps%3A//t.me/WorldZPrimeGrp')
             ],[
                 InlineKeyboardButton('ZeeXClub', url="t.me/ZeeXClub"),
                 InlineKeyboardButton('Groupe de films', url=GRP_LNK)
@@ -63,7 +63,7 @@ async def start(client, message):
             ]]
         else:
             buttons = [[
-                InlineKeyboardButton('⤬ Nous Soutenir ⤬', url=f't.me/https://t.me/share/url?url=Salut%20%F0%9F%91%8B.%0A%0ARegarde%20ce%20groupe%20de%20recherche%20de%20Films/S%C3%A9ries%20automatique%20%F0%9F%91%87%F0%9F%91%87%0A%0Ahttps%3A//t.me/WorldZPrimeGrp%0A%0AC%27est%20gratuit%20aussi%20%F0%9F%A4%A9')
+                InlineKeyboardButton('⤬ Nous Soutenir ⤬', url=f'https://t.me/share/url?url=Groupe%20de%20recherche%20de%20Films/S%C3%A9ries%20en%20Fran%C3%A7ais%20%F0%9F%91%87%0A%0Ahttps%3A//t.me/WorldZPrimeGrp')
             ],[
                 InlineKeyboardButton('ZeeXClub', url="t.me/ZeeXClub"),
                 InlineKeyboardButton('Groupe de films', url=GRP_LNK)
@@ -135,7 +135,7 @@ async def start(client, message):
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         if PREMIUM_AND_REFERAL_MODE == True:
             buttons = [[
-                InlineKeyboardButton('⤬ Nous Soutenir ⤬', url=f't.me/https://t.me/share/url?url=Salut%20%F0%9F%91%8B.%0A%0ARegarde%20ce%20groupe%20de%20recherche%20de%20Films/S%C3%A9ries%20automatique%20%F0%9F%91%87%F0%9F%91%87%0A%0Ahttps%3A//t.me/WorldZPrimeGrp%0A%0AC%27est%20gratuit%20aussi%20%F0%9F%A4%A9')
+                InlineKeyboardButton('⤬ Nous Soutenir ⤬', url=f'https://t.me/share/url?url=Groupe%20de%20recherche%20de%20Films/S%C3%A9ries%20en%20Fran%C3%A7ais%20%F0%9F%91%87%0A%0Ahttps%3A//t.me/WorldZPrimeGrp')
             ],[
                 InlineKeyboardButton('ZeeXClub', url="t.me/ZeeXClub"),
                 InlineKeyboardButton('Groupe de films', url=GRP_LNK)
@@ -149,7 +149,7 @@ async def start(client, message):
             ]]
         else:
             buttons = [[
-                InlineKeyboardButton('⤬ Nous Soutenir ⤬', url=f't.me/https://t.me/share/url?url=Salut%20%F0%9F%91%8B.%0A%0ARegarde%20ce%20groupe%20de%20recherche%20de%20Films/S%C3%A9ries%20automatique%20%F0%9F%91%87%F0%9F%91%87%0A%0Ahttps%3A//t.me/WorldZPrimeGrp%0A%0AC%27est%20gratuit%20aussi%20%F0%9F%A4%A9')
+                InlineKeyboardButton('⤬ Nous Soutenir ⤬', url=f'https://t.me/share/url?url=Groupe%20de%20recherche%20de%20Films/S%C3%A9ries%20en%20Fran%C3%A7ais%20%F0%9F%91%87%0A%0Ahttps%3A//t.me/WorldZPrimeGrp')
             ],[
                 InlineKeyboardButton('ZeeXClub', url="t.me/ZeeXClub"),
                 InlineKeyboardButton('Groupe de films', url=GRP_LNK)
@@ -190,7 +190,7 @@ async def start(client, message):
         else:
             if PREMIUM_AND_REFERAL_MODE == True:
                 buttons = [[
-                    InlineKeyboardButton('⤬ Nous Soutenir ⤬', url=f't.me/https://t.me/share/url?url=Salut%20%F0%9F%91%8B.%0A%0ARegarde%20ce%20groupe%20de%20recherche%20de%20Films/S%C3%A9ries%20automatique%20%F0%9F%91%87%F0%9F%91%87%0A%0Ahttps%3A//t.me/WorldZPrimeGrp%0A%0AC%27est%20gratuit%20aussi%20%F0%9F%A4%A9')
+                    InlineKeyboardButton('⤬ Nous Soutenir ⤬', url=f'https://t.me/share/url?url=Groupe%20de%20recherche%20de%20Films/S%C3%A9ries%20en%20Fran%C3%A7ais%20%F0%9F%91%87%0A%0Ahttps%3A//t.me/WorldZPrimeGrp')
                 ],[
                     InlineKeyboardButton('ZeeXClub', url="t.me/ZeeXClub"),
                     InlineKeyboardButton('Groupe de films', url=GRP_LNK)
@@ -204,7 +204,7 @@ async def start(client, message):
                 ]]
             else:
                 buttons = [[
-                    InlineKeyboardButton('⤬ Nous Soutenir ⤬', url=f't.me/https://t.me/share/url?url=Salut%20%F0%9F%91%8B.%0A%0ARegarde%20ce%20groupe%20de%20recherche%20de%20Films/S%C3%A9ries%20automatique%20%F0%9F%91%87%F0%9F%91%87%0A%0Ahttps%3A//t.me/WorldZPrimeGrp%0A%0AC%27est%20gratuit%20aussi%20%F0%9F%A4%A9')
+                    InlineKeyboardButton('⤬ Nous Soutenir ⤬', url=f'https://t.me/share/url?url=Groupe%20de%20recherche%20de%20Films/S%C3%A9ries%20en%20Fran%C3%A7ais%20%F0%9F%91%87%0A%0Ahttps%3A//t.me/WorldZPrimeGrp')
                 ],[
                     InlineKeyboardButton('ZeeXClub', url="t.me/ZeeXClub"),
                     InlineKeyboardButton('Groupe de films', url=GRP_LNK)
