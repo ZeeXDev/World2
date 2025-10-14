@@ -13,7 +13,7 @@ id_pattern = re.compile(r'^.\d+$')
 SESSION = environ.get('SESSION', 'TechVJBot')
 API_ID = int(environ.get('API_ID', '25926022'))
 API_HASH = environ.get('API_HASH', '30db27d9e56d854fb5e943723268db32')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7449185632:AAESBr8H19csYV83sjVhVhRubhBjW4yksjo")
+BOT_TOKEN = environ.get('BOT_TOKEN', "8020965278:AAGPnediz9QMw1Wx6xspsa0IqDL-rqxoKw4")
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
@@ -52,7 +52,7 @@ support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002165407793')
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
 # This Channel Is For /batch command file store.
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]  # For Multiple Id Use One Space Between Each.
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1003156935853')).split()]  # For Multiple Id Use One Space Between Each.
 
 # This Channel Is For Delete Index File, Forward Your File In This Channel Which You Want To Delete Then Bot Automatically Delete That File From Database.
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]  # For Multiple Id Use One Space Between Each.
