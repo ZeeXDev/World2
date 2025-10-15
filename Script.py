@@ -215,7 +215,7 @@ Veuillez vérifier l'orthographe sur Google ou IMDb..."""
 
     TOP_ALRT_MSG = """Recherche du film dans la base de données..."""
 
-    MELCOW_ENG = """<b>Bonjour {} 😍, Et bienvenue dans le groupe {} ❤️</b>"""
+    MELCOW_ENG = """<b>Bonjour {} 😍, Et bienvenue dans le groupe de demande de Films/Series {} ❤️</b>"""
 
     SHORTLINK_INFO = """
 
@@ -242,8 +242,8 @@ Nom <b>: {}</b>
 
 Message <b>: {}</b>"""
 
-    CAPTION = """📂 Nom du fichier : {file_name} 
-    📦 Par <b>[<a href='t.me/WorldZPrime'>WorldZPrime</a>]</b>""" 
+    CAPTION = """📂 Nom: <b>{file_name}</b> 
+    📦 Par <b>[<a href='t.me/WorldZPrime'>@WorldZPrime</a>]</b>""" 
 
     IMDB_TEMPLATE_TXT = """
 <b>Requête : {qurey}
