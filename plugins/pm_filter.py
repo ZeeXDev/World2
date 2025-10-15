@@ -43,7 +43,7 @@ async def give_filter(client, message):
                 if btn:
                     btn.append([InlineKeyboardButton("Débloqué-Moi 🔕", callback_data=f"unmuteme#{int(user_id)}")])
                     await client.restrict_chat_member(chatid, message.from_user.id, ChatPermissions(can_send_messages=False))
-                    await message.reply_photo(photo=random.choice(PICS), caption=f"👋 Salut {message.from_user.mention},\n\nTu ne peux pas recherchez de Films/Series parceque, tu n'a pas rejoins mes canaux.\nRejoins les et clique sur le bouton en bas (Débloqué-Moi). 😇", reply_markup=InlineKeyboardMarkup(btn), parse_mode=enums.ParseMode.HTML)
+                    await message.reply_photo(photo=random.choice(PICS), caption=f"👋 Salut {message.from_user.mention},\n\n<b>Tu ne peux pas recherchez de Films/Series parceque, tu n'a pas rejoins mes canaux.</b>\nRejoins les  canaux et clique sur le bouton en bas (Débloqué-Moi). 😇", reply_markup=InlineKeyboardMarkup(btn), parse_mode=enums.ParseMode.HTML)
                     return
             except Exception as e:
                 print(e)
